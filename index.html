@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar-container">
+        <div class="logo">
+          <a href="./index.html">Awesome Books</a>
+        </div>
+        <ul class="nav-links">
+          <li class="books-list list">List</li>
+          <hr />
+          <li class="add-new-book add-book">Add new</li>
+          <hr />
+          <li class="contact cont">Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="list">
+        <h1 class="header-title">Awesome Books</h1>
+        <div class="books-container"></div>
+      </section>
+
+      <section id="add-book" class="hide">
+        <div>
+          <h2 class="header-title">Add a new book</h2>
+        </div>
+        <form id="bookForm">
+          <input
+            type="text"
+            name="book-title"
+            id="book-title"
+            placeholder="Book-Title"
+            required
+          />
+          <input
+            type="text"
+            name="author"
+            id="author"
+            placeholder="Author"
+            required
+          />
+          <button class="sbtn" type="submit">Add</button>
+        </form>
+      </section>
+
+      <section id="contact" class="hide">
+        <div>
+          <h2 class="header-title">Contact information</h2>
+        </div>
+        <p>
+          Do have any questions or you just want to say "Hello"?<br />You can
+          reach out to us
+        </p>
+        <ul>
+          <li>Our e-mail: mail@mail.com</li>
+          <li>Our phone number: 0043586534422</li>
+          <li>Our address: Streetname 22, 84503 City, Country</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div>&copy; Copyright ...</div>
+    </footer>
+    <script src="./modules/index.js" type="module"></script>
+  </body>
+</html>
