@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------- Navbar ---------------------- */
+header {
+  padding: 5px 10px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 5vh;
+  border: 0.15rem solid black;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 25%;
+}
+
+.nav-links hr {
+  width: 1px;
+  height: 30px;
+  border: none;
+  background-color: lightgray;
+}
+
+.nav-links li {
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+#add-book {
+  width: 15%;
+  text-align: center;
+}
+
+#form-div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 15px;
+}
+
+#form-title {
+  margin: auto;
+}
+
+#bookForm {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+  column-gap: 2rem;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+#line {
+  margin: auto;
+  width: 100px;
+  margin-top: 20px;
+}
+
+.books-container {
+  max-width: 500px;
+  margin: 30px auto;
+  border: 1px solid;
+}
+
+.header-title {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+button#remove-book {
+  padding: 8px 15px;
+  border: 0.2px solid black;
+  background-color: white;
+  transition: all 0.5s;
+}
+
+button#remove-book:hover {
+  background-color: #000;
+  color: white;
+}
+
+form#bookForm {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 0.5rem 0;
+}
+
+button.sbtn {
+  align-self: flex-end;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid black;
+  transition: all 0.3s;
+  background-color: white;
+}
+
+button.sbtn:hover {
+  background-color: #000;
+  color: white;
+}
+
+.book-card:nth-child(odd) {
+  background: lightgray;
+}
+
+footer {
+  height: 5vh;
+  width: 99%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  border: 0.13rem solid #000;
+}
+
+/* ---------------------- Books List ---------------------- */
+#books-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------- Contact ---------------------- */
+#contact {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact p {
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.hide {
+  display: none !important;
+}
+
+.highlight {
+  color: rgb(55, 55, 177);
+}
