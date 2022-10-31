@@ -1,4 +1,4 @@
-import Books from './BookClass.js';
+import { Books, Date } from './index.js';
 
 const booksContainer = document.querySelector('.books-container');
 const bookForm = document.querySelector('#bookForm');
@@ -30,6 +30,8 @@ class Interface {
       book.parentElement.remove();
     }
   };
+
+  static addDateAndTime = () => {};
 
   static clearInputs = () => {
     bookForm.reset();

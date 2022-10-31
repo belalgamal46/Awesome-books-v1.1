@@ -1,9 +1,19 @@
-import { Books, Interface } from './modules/index.js';
+import { Books, Interface, Date } from './modules/index.js';
 
 const booksContainer = document.querySelector('.books-container');
 
+const updateTime = () => {
+  const dateTimeContainer = document.getElementById('time');
+  const currentDate = Date.getCurrentDate();
+  const currentTime = Date.getCurrentTime();
+  dateTimeContainer.innerHTML = '';
+  dateTimeContainer.innerHTML = `${currentDate}, ${currentTime}`;
+};
+
 // Event: Display books
-document.addEventListener('DOMContentLoaded', Interface.displayBooks);
+document.addEventListener('DOMContentLoaded', () => {
+  Interface.displayBooks();
+});
 
 // Event: add a book
 const bookForm = document.getElementById('bookForm');
@@ -49,3 +59,5 @@ navLinks.addEventListener('click', (event) => {
     }
   });
 });
+
+setTimeout(updateTime(), 1000);

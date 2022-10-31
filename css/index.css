@@ -191,3 +191,8 @@ footer {
 .highlight {
   color: rgb(55, 55, 177);
 }
+
+#time {
+  text-align: right;
+  margin-top: 1rem;
+}
