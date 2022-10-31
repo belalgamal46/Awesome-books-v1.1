@@ -1,4 +1,4 @@
-import { Books, Date } from './index.js';
+import { Books } from './index.js';
 
 const booksContainer = document.querySelector('.books-container');
 const bookForm = document.querySelector('#bookForm');
