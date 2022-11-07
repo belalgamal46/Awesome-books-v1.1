@@ -2,7 +2,7 @@
 
 # Awesome books
 
-> Implementing how to create and access properties and methods of JavaScript objects also storing it in the local storage
+> This is a website to list books you have read or to keep track of what you want to read and what you did read and to Implement how to create and access properties and methods of JavaScript objects also storing them in the local storage
 
 ## Built With
 
